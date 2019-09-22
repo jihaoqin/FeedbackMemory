@@ -12,12 +12,14 @@ public:
     QString newTime;
     QString modifyTime;
     QString detail;
+    void serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
 };
 
 class Item{
 public:
     QString first;
     QString second;
+    void serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
 };
 
 
