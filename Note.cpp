@@ -19,6 +19,14 @@ void Note::serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) c
     writer.StartObject();
     writer.String("type");
     writer.String("Note");
+    writer.String("meta");
+    meta.serialize(writer);
+    writer.String("itemArray");
+    writer.StartArray();
+    for(auto& i:items){
+        i.serialize(writer);
+    }
+    writer.EndArray();
     writer.EndObject();
 }
 
@@ -27,12 +35,9 @@ void NoteMeta::serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& write
     writer.String("type");
     writer.String("NoteMeta");
     writer.String("name");
-    writer.String(meta.name.toLatin1().data());
+    writer.String(name.toLatin1().data());
     writer.String("detail");
-    writer.String(meta.detail.toLatin1().data());
-    for(auto& item:items){
-        item->serialize(writer);
-    }
+    writer.String(detail.toLatin1().data());
     writer.EndObject();
 }
 

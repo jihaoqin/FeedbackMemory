@@ -21,8 +21,10 @@ public:
 
 public slots:
     void updatePages(const QItemSelection &selected, const QItemSelection &deselected);
+    void saveFile();
 
 private:
+    NotesPtr dataPtr;
     void createMenus();
     QMenu* fileMenu;
     QSplitter* mainSplitter;

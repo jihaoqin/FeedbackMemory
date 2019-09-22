@@ -75,3 +75,20 @@ Qt::ItemFlags NoteModel::flags(const QModelIndex &index) const
 
     return Qt::ItemIsEditable | QAbstractItemModel::flags(index);
 }
+
+
+bool NoteModel::insertRows(int row, int count, const QModelIndex& parent){
+    if(row >=0 && row<=rowCount() && count>0){
+        beginInsertRows(parent, row, row+count-1);
+        note->items.insert(row, count, Item());
+        endInsertRows();
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+void NoteModel::setItem(int row, Item value){
+    note->items.replace(row, value);
+}

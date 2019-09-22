@@ -2,6 +2,7 @@
 #define NOTEMODEL_H
 #include <QAbstractTableModel>
 #include "UsingName.h"
+#include "Note.h"
 
 class NoteModel:public QAbstractTableModel
 {
@@ -15,6 +16,8 @@ public:
     bool setData(const QModelIndex &index, const QVariant &value,
                  int role = Qt::EditRole) override;
     Qt::ItemFlags flags(const QModelIndex &index) const override;
+    bool insertRows(int row, int count, const QModelIndex& parent = QModelIndex()) override;
+    void setItem(int, Item);
 private:
     NotePtr note;
 };

@@ -8,6 +8,10 @@
 #include <QMenu>
 #include "rapidjson/document.h"
 #include "rapidjson/prettywriter.h"
+#include <QFileDialog>
+#include "Note.h"
+#include <fstream>
+using namespace rapidjson;
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent)
 {
@@ -43,6 +47,7 @@ MainWindow::~MainWindow()
 
 
 void MainWindow::setData(NotesPtr p){
+    dataPtr = p;
     listWidget->setData(p);
     metaWidget->setData(p);
     tableWidget->setData(p);
@@ -69,8 +74,34 @@ void MainWindow::createMenus(){
 
     saveAct = new QAction(tr("&Save As..."), this);
     fileMenu->addAction(saveAct);
-    //connect(saveAct, &QAction::triggered, this, &MainWindow::saveFile);
+    connect(saveAct, &QAction::triggered, this, &MainWindow::saveFile);
 
     fileMenu->addSeparator();
 
+}
+
+void MainWindow::saveFile(){
+    QString fileName = QFileDialog::getSaveFileName(this, "save note", "", "*.notes");
+    if(fileName.isEmpty()){
+        return ;
+    }
+    else{
+        if(dataPtr){
+            StringBuffer sb;
+            PrettyWriter<StringBuffer> writer(sb);
+            writer.StartArray();
+            const QVector<NotePtr>& data = *dataPtr;
+            for(auto &i:data){
+                i->serialize(writer);
+            }
+            writer.EndArray();
+            std::ofstream outFile;
+            outFile.open(fileName.toLatin1().data());
+            outFile<<sb.GetString();
+            outFile.close();
+        }
+        else{
+            return;
+        }
+    }
 }
