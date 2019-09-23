@@ -2,6 +2,11 @@
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include "Note.h"
+#include <QFileDialog>
+#include <fstream>
+#include <sstream>
+#include <QMessageBox>
+#include "ListDialog.h"
 
 NoteWidget::NoteWidget(QWidget *parent) : QWidget(parent)
 {
@@ -26,6 +31,8 @@ NoteWidget::NoteWidget(QWidget *parent) : QWidget(parent)
     setLayout(mainLayout);
 
     connect(addButton, &QPushButton::clicked, this, &NoteWidget::addItem);
+    connect(removeButton, &QPushButton::clicked, this, &NoteWidget::removeItem);
+    connect(importButton, &QPushButton::clicked, this, &NoteWidget::importItem);
 }
 
 void NoteWidget::setData(NotesPtr p){
@@ -50,4 +57,48 @@ void NoteWidget::updatePage(int i){
 
 void NoteWidget::addItem(){
     model->insertRows(model->rowCount(), 1);
+}
+
+void NoteWidget::removeItem(){
+    const QModelIndex& curInd = view->currentIndex();
+    int row = curInd.row();
+    model->removeRows(row, 1);
+}
+
+void NoteWidget::importItem(){
+    QString path = QFileDialog::getOpenFileName(this, "import item", "");
+    if(path.isEmpty()){
+        return ;
+    }
+    else{
+        std::ifstream inFile;
+        std::string line;
+        inFile.open(path.toLatin1().data());
+        QVector<Item> data;
+        while(getline(inFile, line)){
+            QString str = QString(line.data());
+            auto twoStr = str.split(",");
+            if(twoStr.size() != 2){
+                QMessageBox mesBox(this);
+                mesBox.setWindowTitle("warning");
+                mesBox.setText("wrong format");
+                mesBox.setStandardButtons(QMessageBox::Ok);
+                if(mesBox.exec() == QMessageBox::Ok){
+                    return;
+                }
+            }
+            data.append(Item{twoStr.first(), twoStr.last()});
+        }
+        NotePtr p = std::make_shared<Note>();
+        p->items = data;
+        ListDialog* dialog = new ListDialog;
+        dialog->setResource(p);
+        if(dialog->exec() != QDialog::Accepted){
+            return;
+        }
+        for(auto& item:data){
+            notes->at(workInd)->items.append(item);
+        }
+        updatePage(workInd);
+    }
 }

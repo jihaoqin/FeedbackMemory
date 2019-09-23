@@ -35,7 +35,8 @@ SOURCES += \
     ListModel.cpp \
     NoteModel.cpp \
     NoteWidget.cpp \
-    AddDialog.cpp
+    AddDialog.cpp \
+    ListDialog.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -48,7 +49,8 @@ HEADERS += \
     ListModel.h \
     NoteModel.h \
     NoteWidget.h \
-    AddDialog.h
+    AddDialog.h \
+    ListDialog.h
 
 FORMS +=
 INCLUDEPATH += $$PWD/3rdparty/includes

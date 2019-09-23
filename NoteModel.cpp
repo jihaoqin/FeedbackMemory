@@ -92,3 +92,15 @@ bool NoteModel::insertRows(int row, int count, const QModelIndex& parent){
 void NoteModel::setItem(int row, Item value){
     note->items.replace(row, value);
 }
+
+bool NoteModel::removeRows(int row, int count, const QModelIndex& parent){
+    if(row >=0 && row <= rowCount() && count>0){
+        beginRemoveRows(parent, row, row+count-1);
+        note->items.remove(row, count);
+        endRemoveRows();
+        return true;
+    }
+    else{
+        return false;
+    }
+}

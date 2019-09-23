@@ -18,6 +18,8 @@ signals:
 
 public slots:
     void addItem();
+    void removeItem();
+    void importItem();
 private:
     QTableView* view;
     NoteModel* model;
