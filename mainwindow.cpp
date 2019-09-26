@@ -11,6 +11,12 @@
 #include <QFileDialog>
 #include "Note.h"
 #include <fstream>
+#include "TestIniDialog.h"
+#include "TestDialog.h"
+#include "TestData.h"
+#include "Data.h"
+#include "TestResultWidget.h"
+
 using namespace rapidjson;
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent)
@@ -46,11 +52,11 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::setData(NotesPtr p){
+void MainWindow::setData(DataPtr p){
     dataPtr = p;
-    listWidget->setData(p);
-    metaWidget->setData(p);
-    tableWidget->setData(p);
+    listWidget->setData(p->notes);
+    metaWidget->setData(p->notes);
+    tableWidget->setData(p->notes);
 }
 
 
@@ -67,6 +73,7 @@ void MainWindow::updatePages(const QItemSelection &selected, const QItemSelectio
 
 void MainWindow::createMenus(){
     fileMenu = menuBar()->addMenu(tr("&File"));
+    examMenu = menuBar()->addMenu(tr("&Exam"));
 
     openAct = new QAction(tr("&Open..."), this);
     fileMenu->addAction(openAct);
@@ -76,6 +83,13 @@ void MainWindow::createMenus(){
     fileMenu->addAction(saveAct);
     connect(saveAct, &QAction::triggered, this, &MainWindow::saveFile);
 
+    beginAct = new QAction(tr("&Begin test"), this);
+    examMenu->addAction(beginAct);
+    connect(beginAct, &QAction::triggered, this, &MainWindow::beginTest);
+
+    lookTestAct = new QAction("&Result", this);
+    examMenu->addAction(lookTestAct);
+    connect(lookTestAct, &QAction::triggered, this, &MainWindow::lookTest);
     fileMenu->addSeparator();
 
 }
@@ -89,12 +103,7 @@ void MainWindow::saveFile(){
         if(dataPtr){
             StringBuffer sb;
             PrettyWriter<StringBuffer> writer(sb);
-            writer.StartArray();
-            const QVector<NotePtr>& data = *dataPtr;
-            for(auto &i:data){
-                i->serialize(writer);
-            }
-            writer.EndArray();
+            dataPtr->serialize(writer);
             std::ofstream outFile;
             outFile.open(fileName.toLatin1().data());
             outFile<<sb.GetString();
@@ -104,4 +113,64 @@ void MainWindow::saveFile(){
             return;
         }
     }
+}
+
+void MainWindow::beginTest(){
+    TestIniDialog* dialog = new TestIniDialog(dataPtr->notes);
+    if(dialog->exec() == QDialog::Rejected){
+        return;
+    }
+    auto indexs = dialog->choiceIndex();
+    if(indexs.size() == 0){
+        return;
+    }
+    QVector<Item> items;
+    for(auto i:indexs){
+        auto& testSet = dataPtr->notes->at(i)->items;
+        for(auto item:testSet){
+            items.append(item);
+        }
+    }
+    QVector<int> problemIndexs = randomNum(items.size(), dialog->totalNum());
+    QVector<Item> resource;
+    for(auto i:problemIndexs){
+        resource.push_back(items.at(i));
+    }
+    TestDialog* testDialog = new TestDialog(resource, this);
+    auto code = testDialog->exec();
+    if(code == QDialog::Accepted){
+        if(testDialog->submited == true){
+            auto testD = testDialog->data();
+            testD->submmited = true;
+            dataPtr->tests.append(testD);
+        }
+        else{
+            auto testD = testDialog->data();
+            testD->submmited = false;
+            dataPtr->tests.append(testD);
+        }
+    }
+    else{
+        return;
+    }
+}
+
+QVector<int> randomNum(int range, int size){
+    QSet<int> choice;
+    QVector<int> result;
+    srand(time(0));
+    for(int i = 0; i < size; i++){
+        int num;
+        do{
+            num = rand()%range;
+        }while(choice.find(num) != choice.end());
+        result.push_back(num);
+        choice.insert(num);
+    }
+    return result;
+}
+
+void MainWindow::lookTest(){
+    TestResultWidget* widget = new TestResultWidget(dataPtr);
+    widget->show();
 }

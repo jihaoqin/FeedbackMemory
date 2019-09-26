@@ -22,6 +22,8 @@ public:
     void serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
 };
 
+using ItemVec = QVector<Item>;
+
 
 class Note
 {

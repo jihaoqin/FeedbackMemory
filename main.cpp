@@ -3,6 +3,7 @@
 #include <QVector>
 #include "UsingName.h"
 #include "Note.h"
+#include "Data.h"
 
 int main(int argc, char *argv[])
 {
@@ -21,8 +22,11 @@ int main(int argc, char *argv[])
     chs->items.push_back(Item{"fadf", "ahead"});
     notes->push_back(chs);
 
+    DataPtr data = std::make_shared<Data>();
+    data->notes = notes;
+
     MainWindow w;
-    w.setData(notes);
+    w.setData(data);
     w.show();
 
     return a.exec();

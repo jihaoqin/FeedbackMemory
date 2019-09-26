@@ -36,7 +36,12 @@ SOURCES += \
     NoteModel.cpp \
     NoteWidget.cpp \
     AddDialog.cpp \
-    ListDialog.cpp
+    ListDialog.cpp \
+    TestIniDialog.cpp \
+    TestDialog.cpp \
+    TestWidget.cpp \
+    TestData.cpp \
+    TestResultWidget.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -50,7 +55,12 @@ HEADERS += \
     NoteModel.h \
     NoteWidget.h \
     AddDialog.h \
-    ListDialog.h
+    ListDialog.h \
+    TestIniDialog.h \
+    TestDialog.h \
+    TestWidget.h \
+    TestData.h \
+    TestResultWidget.h
 
 FORMS +=
 INCLUDEPATH += $$PWD/3rdparty/includes

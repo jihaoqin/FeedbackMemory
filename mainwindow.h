@@ -16,17 +16,20 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
-    void setData(NotesPtr);
+    void setData(DataPtr);
     ~MainWindow();
 
 public slots:
     void updatePages(const QItemSelection &selected, const QItemSelection &deselected);
     void saveFile();
+    void beginTest();
+    void lookTest();
 
 private:
-    NotesPtr dataPtr;
+    DataPtr dataPtr;
     void createMenus();
     QMenu* fileMenu;
+    QMenu* examMenu;
     QSplitter* mainSplitter;
     QSplitter* leftSplitter;
     NoteListWidget* listWidget;
@@ -34,6 +37,10 @@ private:
     NoteWidget* tableWidget;
     QAction* openAct;
     QAction* saveAct;
+    QAction* beginAct;
+    QAction* lookTestAct;
 };
+
+QVector<int> randomNum(int range, int size);
 
 #endif // MAINWINDOW_H
