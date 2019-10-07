@@ -42,3 +42,7 @@ void TestDialog::store(){
     emit accepted();
     accept();
 }
+
+void TestDialog::setAnswer(QStringVec answers){
+    testWidget->setAnswers(answers);
+}

@@ -15,7 +15,6 @@
 #include "TestDialog.h"
 #include "TestData.h"
 #include "Data.h"
-#include "TestResultWidget.h"
 
 using namespace rapidjson;
 MainWindow::MainWindow(QWidget *parent) :
@@ -23,7 +22,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     resize(1000,600);
     createMenus();
-    mainSplitter = new QSplitter(Qt::Horizontal, this);
+    testResultWidget = new TestResultWidget(dataPtr, this);
+    mainSplitter = new QSplitter(Qt::Horizontal);
     leftSplitter = new QSplitter(Qt::Vertical, mainSplitter);
     listWidget = new NoteListWidget(this);
     listWidget->setMinimumWidth(100);
@@ -38,6 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     mainSplitter->addWidget(leftSplitter);
     mainSplitter->addWidget(tableWidget);
+    mainSplitter->addWidget(testResultWidget);
     mainSplitter->setHandleWidth(2);
     mainSplitter->setStyleSheet("QSplitter::handle { background-color: black }");
     mainSplitter->setStretchFactor(0,1);
@@ -57,12 +58,12 @@ void MainWindow::setData(DataPtr p){
     listWidget->setData(p->notes);
     metaWidget->setData(p->notes);
     tableWidget->setData(p->notes);
+    testResultWidget->setResource(p);
 }
 
 
 void MainWindow::updatePages(const QItemSelection &selected, const QItemSelection &deselected){
     QModelIndexList indexes = selected.indexes();
-
     if (!indexes.isEmpty()) {
         auto i = indexes.at(0);
         metaWidget->updatePage(i.row());
@@ -77,7 +78,7 @@ void MainWindow::createMenus(){
 
     openAct = new QAction(tr("&Open..."), this);
     fileMenu->addAction(openAct);
-    //connect(openAct, &QAction::triggered, this, &MainWindow::openFile);
+    connect(openAct, &QAction::triggered, this, &MainWindow::openFile);
 
     saveAct = new QAction(tr("&Save As..."), this);
     fileMenu->addAction(saveAct);
@@ -139,16 +140,16 @@ void MainWindow::beginTest(){
     TestDialog* testDialog = new TestDialog(resource, this);
     auto code = testDialog->exec();
     if(code == QDialog::Accepted){
+        auto testD = testDialog->data();
         if(testDialog->submited == true){
-            auto testD = testDialog->data();
             testD->submmited = true;
             dataPtr->tests.append(testD);
         }
         else{
-            auto testD = testDialog->data();
             testD->submmited = false;
             dataPtr->tests.append(testD);
         }
+        testResultWidget->addLabel(testD);
     }
     else{
         return;
@@ -173,4 +174,63 @@ QVector<int> randomNum(int range, int size){
 void MainWindow::lookTest(){
     TestResultWidget* widget = new TestResultWidget(dataPtr);
     widget->show();
+}
+
+
+void MainWindow::openFile(){
+    QString fileName = QFileDialog::getOpenFileName(this, "open note", "", "*.notes");
+    if(fileName.isEmpty()){
+        return;
+    }
+    std::ifstream inFile;
+    std::string line;
+    std::string allLine;
+    inFile.open(fileName.toLatin1().data());
+    while(getline(inFile, line)){
+        allLine.append(line+"\n");
+    }
+    Document doc;
+    doc.Parse<0>(allLine.c_str());
+    if(doc.HasParseError()){
+        return ;
+    }
+    std::shared_ptr<Data> data = dataPtr;
+    const Value& obj = doc;
+    const Value& notes = obj["notes"];
+    DataPtr dataP = std::make_shared<Data>();
+    dataP->notes = std::make_shared<QVector<NotePtr>>();
+    for(auto j = 0; j<notes.Size(); j++){
+        NotePtr note = std::make_shared<Note>();
+        const Value& notej = notes[j];
+        const Value& meta = notej["meta"];
+        QString name = meta["name"].GetString();
+        QString detail = meta["detail"].GetString();
+        note->meta.name = name;
+        note->meta.detail = detail;
+        const Value& itemArray = notej["itemArray"];
+        for(int i = 0; i<itemArray.Size(); i++){
+            const Value& item = itemArray[i];
+            QString first = item["first"].GetString();
+            QString second = item["second"].GetString();
+            note->items.append({first, second});
+        }
+        dataP->notes->append(note);
+    }
+    const Value& tests = obj["tests"];
+    for(auto i = 0; i<tests.Size(); i++){
+        TestPtr testP = std::make_shared<TestData>();
+        const Value& test = tests[i];
+        const Value& answers = test["answers"];
+        for(auto j = 0; j<answers.Size(); j++){
+            testP->answers.append(answers[j].GetString());
+        }
+        testP->submmited = test["submmited"].GetBool();
+        const Value& titles = test["titles"];
+        for(auto j = 0; j<titles.Size(); j++){
+            const Value& t = titles[j];
+            testP->titles.append(Item{t["first"].GetString(), t["second"].GetString()});
+        }
+        dataP->tests.append(testP);
+    }
+    setData(dataP);
 }

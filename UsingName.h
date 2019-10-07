@@ -15,5 +15,6 @@ using TestPtrs = QVector<TestPtr>;
 
 class Data;
 using DataPtr = std::shared_ptr<Data>;
+using QStringVec = QVector<QString>;
 
 #endif // USINGNAME_H

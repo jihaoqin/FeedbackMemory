@@ -41,7 +41,8 @@ SOURCES += \
     TestDialog.cpp \
     TestWidget.cpp \
     TestData.cpp \
-    TestResultWidget.cpp
+    TestResultWidget.cpp \
+    SelfknownButton.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -60,7 +61,8 @@ HEADERS += \
     TestDialog.h \
     TestWidget.h \
     TestData.h \
-    TestResultWidget.h
+    TestResultWidget.h \
+    SelfknownButton.h
 
 FORMS +=
 INCLUDEPATH += $$PWD/3rdparty/includes

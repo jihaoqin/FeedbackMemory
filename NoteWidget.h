@@ -20,6 +20,7 @@ public slots:
     void addItem();
     void removeItem();
     void importItem();
+    void outputItem();
 private:
     QTableView* view;
     NoteModel* model;
@@ -28,6 +29,7 @@ private:
     QPushButton* addButton;
     QPushButton* removeButton;
     QPushButton* importButton;
+    QPushButton* outportButton;
 };
 
 #endif // NOTEWIDGET_H

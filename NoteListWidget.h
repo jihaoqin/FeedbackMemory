@@ -20,6 +20,7 @@ protected:
 public slots:
     void changed(const QItemSelection &selected, const QItemSelection &deselected);
     void showAddEntryDialog();
+    void deleteNote();
 
 private:
     QListView* view;

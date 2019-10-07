@@ -14,10 +14,12 @@ NoteWidget::NoteWidget(QWidget *parent) : QWidget(parent)
     addButton = new QPushButton("add", this);
     removeButton = new QPushButton("remove", this);
     importButton = new QPushButton("import", this);
+    outportButton = new QPushButton("outport", this);
     QVBoxLayout* buttonLayout = new QVBoxLayout();
     buttonLayout->addWidget(addButton);
     buttonLayout->addWidget(removeButton);
     buttonLayout->addWidget(importButton);
+    buttonLayout->addWidget(outportButton);
     buttonLayout->addStretch();
     view = new QTableView;
     model = new NoteModel;
@@ -33,6 +35,7 @@ NoteWidget::NoteWidget(QWidget *parent) : QWidget(parent)
     connect(addButton, &QPushButton::clicked, this, &NoteWidget::addItem);
     connect(removeButton, &QPushButton::clicked, this, &NoteWidget::removeItem);
     connect(importButton, &QPushButton::clicked, this, &NoteWidget::importItem);
+    connect(outportButton, &QPushButton::clicked, this, &NoteWidget::outputItem);
 }
 
 void NoteWidget::setData(NotesPtr p){
@@ -101,4 +104,23 @@ void NoteWidget::importItem(){
         }
         updatePage(workInd);
     }
+}
+
+void NoteWidget::outputItem(){
+    QString path = QFileDialog::getSaveFileName(this, "output item", "");
+    if(path.isEmpty()){
+        return ;
+    }
+    std::ofstream outFile;
+    QString line;
+    outFile.open(path.toLatin1().data());
+    int rowCount = model->rowCount();
+    for(int i = 0; i<rowCount; i++){
+        auto first = model->data(model->index(i, 0)).toString();
+        auto second = model->data(model->index(i, 1)).toString();
+        line += first + "," + second + "\n";
+    }
+    std::string str = line.toUtf8().data();
+    outFile << str;
+    outFile.close();
 }

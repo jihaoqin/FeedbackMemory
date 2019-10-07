@@ -15,6 +15,7 @@ class TestDialog: public QDialog
 public:
     TestDialog(QVector<Item> resource, QWidget* parent = nullptr);
     TestPtr data();
+    void setAnswer(QStringVec);
     bool submited;
 public slots:
     void submit();

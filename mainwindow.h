@@ -5,6 +5,7 @@
 #include <QItemSelection>
 #include "UsingName.h"
 #include "NoteWidget.h"
+#include "TestResultWidget.h"
 
 class QSplitter;
 class NoteListWidget;
@@ -22,6 +23,7 @@ public:
 public slots:
     void updatePages(const QItemSelection &selected, const QItemSelection &deselected);
     void saveFile();
+    void openFile();
     void beginTest();
     void lookTest();
 
@@ -39,6 +41,7 @@ private:
     QAction* saveAct;
     QAction* beginAct;
     QAction* lookTestAct;
+    TestResultWidget* testResultWidget;
 };
 
 QVector<int> randomNum(int range, int size);

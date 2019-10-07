@@ -1,4 +1,5 @@
 ﻿#include "Note.h"
+#include <QTextCodec>
 
 Note::Note()
 {
@@ -35,9 +36,9 @@ void NoteMeta::serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& write
     writer.String("type");
     writer.String("NoteMeta");
     writer.String("name");
-    writer.String(name.toLatin1().data());
+    writer.String(name.toUtf8().data());
     writer.String("detail");
-    writer.String(detail.toLatin1().data());
+    writer.String(detail.toUtf8().data());
     writer.EndObject();
 }
 
@@ -46,8 +47,8 @@ void Item::serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) c
     writer.String("type");
     writer.String("Item");
     writer.String("first");
-    writer.String(first.toLatin1().data());
+    writer.String(first.toUtf8().data());
     writer.String("second");
-    writer.String(second.toLatin1().data());
+    writer.String(second.toUtf8().data());
     writer.EndObject();
 }

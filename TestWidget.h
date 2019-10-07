@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QLabel>
 #include <QLineEdit>
+#include "UsingName.h"
 #include "Note.h"
 
 class TestWidget : public QWidget
@@ -12,6 +13,7 @@ class TestWidget : public QWidget
 public:
     explicit TestWidget(QVector<Item> resource, QWidget *parent = nullptr);
     QVector<QString> data();
+    void setAnswers(QStringVec);
 private:
     QVector<Item> items;
     QVector<QLabel*> labels;

@@ -25,15 +25,15 @@ QVariant NoteModel::data(const QModelIndex& index, int role) const{
     if (index.row() >= note->size() || index.row() < 0)
         return QVariant();
 
-    if (role == Qt::DisplayRole && note) {
-        const auto &item = note->at(index.row());
+    if (role != Qt::DisplayRole && role != Qt::EditRole)
+        return QVariant();
 
-        if (index.column() == 0)
-            return item.first;
-        else if (index.column() == 1)
-            return item.second;
-    }
-    return QVariant();
+    const auto &item = note->at(index.row());
+
+    if (index.column() == 0)
+        return item.first;
+    else if (index.column() == 1)
+        return item.second;
 }
 
 

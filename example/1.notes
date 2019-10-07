@@ -1,0 +1,258 @@
+{
+    "notes": [
+        {
+            "type": "Note",
+            "meta": {
+                "type": "NoteMeta",
+                "name": "错题本",
+                "detail": ""
+            },
+            "itemArray": []
+        },
+        {
+            "type": "Note",
+            "meta": {
+                "type": "NoteMeta",
+                "name": "日本語",
+                "detail": ""
+            },
+            "itemArray": [
+                {
+                    "type": "Item",
+                    "first": "辛い",
+                    "second": "からい"
+                },
+                {
+                    "type": "Item",
+                    "first": "甘い",
+                    "second": "あまい"
+                },
+                {
+                    "type": "Item",
+                    "first": "苦い",
+                    "second": "にがい"
+                },
+                {
+                    "type": "Item",
+                    "first": "塩辛い",
+                    "second": "しおからい"
+                },
+                {
+                    "type": "Item",
+                    "first": "酸っぱい",
+                    "second": "すっぱい"
+                },
+                {
+                    "type": "Item",
+                    "first": "好吃",
+                    "second": "おいしい"
+                },
+                {
+                    "type": "Item",
+                    "first": "不好吃",
+                    "second": "まずい"
+                },
+                {
+                    "type": "Item",
+                    "first": "熱い",
+                    "second": "あつい"
+                },
+                {
+                    "type": "Item",
+                    "first": "冷たい",
+                    "second": "つめたい"
+                },
+                {
+                    "type": "Item",
+                    "first": "楽しい",
+                    "second": "たのしい"
+                },
+                {
+                    "type": "Item",
+                    "first": "面白い",
+                    "second": "おもしろい"
+                },
+                {
+                    "type": "Item",
+                    "first": "无聊",
+                    "second": "つまらない"
+                },
+                {
+                    "type": "Item",
+                    "first": "広い",
+                    "second": "ひろい"
+                },
+                {
+                    "type": "Item",
+                    "first": "狭い",
+                    "second": "せまい"
+                },
+                {
+                    "type": "Item",
+                    "first": "大きい",
+                    "second": "おおきい"
+                },
+                {
+                    "type": "Item",
+                    "first": "小さい",
+                    "second": "ちいさい"
+                },
+                {
+                    "type": "Item",
+                    "first": "忙しい",
+                    "second": "いそがしい"
+                },
+                {
+                    "type": "Item",
+                    "first": "好",
+                    "second": "いい"
+                },
+                {
+                    "type": "Item",
+                    "first": "悪い",
+                    "second": "わるい"
+                },
+                {
+                    "type": "Item",
+                    "first": "绝好的，极佳的",
+                    "second": "すばらしい"
+                },
+                {
+                    "type": "Item",
+                    "first": "遠い",
+                    "second": "とおい"
+                },
+                {
+                    "type": "Item",
+                    "first": "近い",
+                    "second": "ちかい"
+                },
+                {
+                    "type": "Item",
+                    "first": "高い",
+                    "second": "たかい"
+                },
+                {
+                    "type": "Item",
+                    "first": "低い",
+                    "second": "ひくい"
+                },
+                {
+                    "type": "Item",
+                    "first": "安い",
+                    "second": "やすい"
+                },
+                {
+                    "type": "Item",
+                    "first": "寒い",
+                    "second": "さむい"
+                },
+                {
+                    "type": "Item",
+                    "first": "暑い",
+                    "second": "あつい"
+                },
+                {
+                    "type": "Item",
+                    "first": "青い",
+                    "second": "あおい"
+                },
+                {
+                    "type": "Item",
+                    "first": "白い",
+                    "second": "しろい"
+                },
+                {
+                    "type": "Item",
+                    "first": "新しい",
+                    "second": "あたらしい"
+                },
+                {
+                    "type": "Item",
+                    "first": "古い",
+                    "second": "ふるい"
+                },
+                {
+                    "type": "Item",
+                    "first": "難しい",
+                    "second": "むずかしい"
+                },
+                {
+                    "type": "Item",
+                    "first": "易しい",
+                    "second": "やさしい"
+                },
+                {
+                    "type": "Item",
+                    "first": "多い",
+                    "second": "おおい"
+                },
+                {
+                    "type": "Item",
+                    "first": "少ない",
+                    "second": "すくない"
+                },
+                {
+                    "type": "Item",
+                    "first": "可愛",
+                    "second": "かわい"
+                },
+                {
+                    "type": "Item",
+                    "first": "本当に",
+                    "second": "ほんとうに"
+                },
+                {
+                    "type": "Item",
+                    "first": "副词不太",
+                    "second": "あまり"
+                },
+                {
+                    "type": "Item",
+                    "first": "副词很",
+                    "second": "とても"
+                },
+                {
+                    "type": "Item",
+                    "first": "副词一点儿",
+                    "second": "少し"
+                },
+                {
+                    "type": "Item",
+                    "first": "全然",
+                    "second": "ぜんぜｎ"
+                },
+                {
+                    "type": "Item",
+                    "first": "副词一点儿ち",
+                    "second": "ちょっと"
+                },
+                {
+                    "type": "Item",
+                    "first": "副词正好",
+                    "second": "ちょっど"
+                },
+                {
+                    "type": "Item",
+                    "first": "感觉舒服心情愉快",
+                    "second": "気持ちがいい"
+                },
+                {
+                    "type": "Item",
+                    "first": "用",
+                    "second": "よう"
+                }
+            ]
+        },
+        {
+            "type": "Note",
+            "meta": {
+                "type": "NoteMeta",
+                "name": "临时",
+                "detail": ""
+            },
+            "itemArray": []
+        }
+    ],
+    "tests": []
+}

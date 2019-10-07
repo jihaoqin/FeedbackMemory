@@ -36,6 +36,7 @@ void NoteListWidget::contextMenuEvent(QContextMenuEvent* event){
     popMenu->addAction(addNote);
     popMenu->addAction(deleteNote);
     connect(addNote, &QAction::triggered, this, &NoteListWidget::showAddEntryDialog);
+    connect(deleteNote, &QAction::triggered, this, &NoteListWidget::deleteNote);
 
     popMenu->exec(QCursor::pos());
 }
@@ -54,5 +55,11 @@ void NoteListWidget::showAddEntryDialog(){
 void NoteListWidget::addEntry(QString name){
     model->insertRow(model->rowCount());
     model->setData(model->index(model->rowCount()-1), name);
+}
 
+
+void NoteListWidget::deleteNote(){
+    auto index = view->currentIndex().row();
+    model->removeRows(index, 1);
+    view->setCurrentIndex(model->index(index-1));
 }
