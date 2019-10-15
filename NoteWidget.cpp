@@ -107,7 +107,7 @@ void NoteWidget::importItem(){
 }
 
 void NoteWidget::outputItem(){
-    QString path = QFileDialog::getSaveFileName(this, "output item", "");
+    QString path = QFileDialog::getSaveFileName(this, "output item", "", "*.items");
     if(path.isEmpty()){
         return ;
     }
@@ -123,4 +123,8 @@ void NoteWidget::outputItem(){
     std::string str = line.toUtf8().data();
     outFile << str;
     outFile.close();
+}
+
+void NoteWidget::addItems(QVector<Item> items){
+    assert(0);
 }

@@ -13,6 +13,7 @@ public:
     explicit NoteWidget(QWidget *parent = nullptr);
     void setData(NotesPtr);
     void updatePage(int);
+    void addItems(QVector<Item>);
 
 signals:
 

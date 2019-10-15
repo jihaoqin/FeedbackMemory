@@ -25,12 +25,13 @@ TestIniDialog::TestIniDialog(NotesPtr p, QWidget* parent): QDialog (parent)
     sliderLayout->addWidget(quantitySlider);
     sliderLayout->addWidget(numberLabel);
     connect(quantitySlider, &QSlider::valueChanged, this, &TestIniDialog::updateNum);
+    quantitySlider->setValue(100);
 
     QVBoxLayout* mainLayout = new QVBoxLayout;
     int maxNum = data->size();
     for(auto i = 0; i <= maxNum-1; i++){
         QCheckBox* box = new QCheckBox(this);
-        connect(box, &QCheckBox::click, this, &TestIniDialog::updateNum);
+        connect(box, &QCheckBox::clicked, this, &TestIniDialog::updateNum);
         boxs.append(box);
         QString name = data->at(i)->meta.name;
         box->setText(name);
@@ -51,6 +52,10 @@ void TestIniDialog::setResource(NotesPtr p){
 
 void TestIniDialog::updateNum(){
     int num = 0;
+    if(boxs.size() == 0){
+        numberLabel->setText("0");
+        return;
+    }
     for(int i = 0; i<=data->size()-1; i++){
         auto box = boxs.at(i);
         if(box->isChecked()){

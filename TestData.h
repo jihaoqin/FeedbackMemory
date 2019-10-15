@@ -13,6 +13,7 @@ public:
     TestData();
     TestData(ItemVec t, QStringVec a);
     float correctRate();
+    QVector<Item> wrongItems();
     void serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
     bool submmited;
     QVector<QString> answers;

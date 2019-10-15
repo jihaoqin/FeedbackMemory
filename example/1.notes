@@ -7,7 +7,118 @@
                 "name": "错题本",
                 "detail": ""
             },
-            "itemArray": []
+            "itemArray": [
+                {
+                    "type": "Item",
+                    "first": "中文如何",
+                    "second": "いかが"
+                },
+                {
+                    "type": "Item",
+                    "first": "魚",
+                    "second": "さかな"
+                },
+                {
+                    "type": "Item",
+                    "first": "有名",
+                    "second": "ゆうめい"
+                },
+                {
+                    "type": "Item",
+                    "first": "富士山",
+                    "second": "ふじさん"
+                },
+                {
+                    "type": "Item",
+                    "first": "修学旅行",
+                    "second": "しゅうがくりょこう"
+                },
+                {
+                    "type": "Item",
+                    "first": "平日",
+                    "second": "へいじつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "お店",
+                    "second": "おみせ"
+                },
+                {
+                    "type": "Item",
+                    "first": "中",
+                    "second": "じゅう"
+                },
+                {
+                    "type": "Item",
+                    "first": "哎",
+                    "second": "ところで"
+                },
+                {
+                    "type": "Item",
+                    "first": "嫌い",
+                    "second": "きらい"
+                },
+                {
+                    "type": "Item",
+                    "first": "season",
+                    "second": "シーズン"
+                },
+                {
+                    "type": "Item",
+                    "first": "不便",
+                    "second": "ふべｎ"
+                },
+                {
+                    "type": "Item",
+                    "first": "親切",
+                    "second": "しんせつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "生活",
+                    "second": "せいかつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "日",
+                    "second": "ひ"
+                },
+                {
+                    "type": "Item",
+                    "first": "作品",
+                    "second": "さくひん"
+                },
+                {
+                    "type": "Item",
+                    "first": "道具",
+                    "second": "どうぐ"
+                },
+                {
+                    "type": "Item",
+                    "first": "便利",
+                    "second": "べんり"
+                },
+                {
+                    "type": "Item",
+                    "first": "観光客",
+                    "second": "かんこうきゃく"
+                },
+                {
+                    "type": "Item",
+                    "first": "暇",
+                    "second": "ひま"
+                },
+                {
+                    "type": "Item",
+                    "first": "曇り",
+                    "second": "くもり"
+                },
+                {
+                    "type": "Item",
+                    "first": "世界",
+                    "second": "せかい"
+                }
+            ]
         },
         {
             "type": "Note",
@@ -252,7 +363,1583 @@
                 "detail": ""
             },
             "itemArray": []
+        },
+        {
+            "type": "Note",
+            "meta": {
+                "type": "NoteMeta",
+                "name": "第十课",
+                "detail": ""
+            },
+            "itemArray": [
+                {
+                    "type": "Item",
+                    "first": "紅葉",
+                    "second": "もみじ"
+                },
+                {
+                    "type": "Item",
+                    "first": "故郷",
+                    "second": "こきょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "通り",
+                    "second": "とおり"
+                },
+                {
+                    "type": "Item",
+                    "first": "町",
+                    "second": "まち"
+                },
+                {
+                    "type": "Item",
+                    "first": "所",
+                    "second": "ところ"
+                },
+                {
+                    "type": "Item",
+                    "first": "お店",
+                    "second": "おみせ"
+                },
+                {
+                    "type": "Item",
+                    "first": "人形",
+                    "second": "にんぎょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "作品",
+                    "second": "さくひん"
+                },
+                {
+                    "type": "Item",
+                    "first": "彫刻",
+                    "second": "ちょうこく"
+                },
+                {
+                    "type": "Item",
+                    "first": "自動車",
+                    "second": "じどうしゃ"
+                },
+                {
+                    "type": "Item",
+                    "first": "道具",
+                    "second": "どうぐ"
+                },
+                {
+                    "type": "Item",
+                    "first": "魚",
+                    "second": "さかな"
+                },
+                {
+                    "type": "Item",
+                    "first": "お菓子",
+                    "second": "おかし"
+                },
+                {
+                    "type": "Item",
+                    "first": "物",
+                    "second": "もの"
+                },
+                {
+                    "type": "Item",
+                    "first": "season",
+                    "second": "シーズン"
+                },
+                {
+                    "type": "Item",
+                    "first": "修学旅行",
+                    "second": "しゅうがくりょこう"
+                },
+                {
+                    "type": "Item",
+                    "first": "観光客",
+                    "second": "かんこうきゃく"
+                },
+                {
+                    "type": "Item",
+                    "first": "作家",
+                    "second": "さっか"
+                },
+                {
+                    "type": "Item",
+                    "first": "部長",
+                    "second": "ぶちょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "平日",
+                    "second": "へいじつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "日",
+                    "second": "ひ"
+                },
+                {
+                    "type": "Item",
+                    "first": "生活",
+                    "second": "せいかつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "世界",
+                    "second": "せかい"
+                },
+                {
+                    "type": "Item",
+                    "first": "晴れ",
+                    "second": "はれ"
+                },
+                {
+                    "type": "Item",
+                    "first": "雨",
+                    "second": "あめ"
+                },
+                {
+                    "type": "Item",
+                    "first": "曇り",
+                    "second": "くもり"
+                },
+                {
+                    "type": "Item",
+                    "first": "雪",
+                    "second": "ゆき"
+                },
+                {
+                    "type": "Item",
+                    "first": "汚い",
+                    "second": "きたない"
+                },
+                {
+                    "type": "Item",
+                    "first": "綺麗",
+                    "second": "きれい"
+                },
+                {
+                    "type": "Item",
+                    "first": "有名",
+                    "second": "ゆうめい"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文热闹",
+                    "second": "にぎやか"
+                },
+                {
+                    "type": "Item",
+                    "first": "静か",
+                    "second": "しずか"
+                },
+                {
+                    "type": "Item",
+                    "first": "暇",
+                    "second": "ひま"
+                },
+                {
+                    "type": "Item",
+                    "first": "親切",
+                    "second": "しんせつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "好き",
+                    "second": "すき"
+                },
+                {
+                    "type": "Item",
+                    "first": "嫌い",
+                    "second": "きらい"
+                },
+                {
+                    "type": "Item",
+                    "first": "便利",
+                    "second": "べんり"
+                },
+                {
+                    "type": "Item",
+                    "first": "不便",
+                    "second": "ふべん"
+                },
+                {
+                    "type": "Item",
+                    "first": "元気",
+                    "second": "げんき"
+                },
+                {
+                    "type": "Item",
+                    "first": "簡単",
+                    "second": "かんたん"
+                },
+                {
+                    "type": "Item",
+                    "first": "handsome",
+                    "second": "ハンサム"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文什么样的",
+                    "second": "どんな"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文怎样",
+                    "second": "どう"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文如何",
+                    "second": "いかが"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文各种各样",
+                    "second": "いろいろ"
+                },
+                {
+                    "type": "Item",
+                    "first": "可是不过",
+                    "second": "でも"
+                },
+                {
+                    "type": "Item",
+                    "first": "而且、于是",
+                    "second": "そして"
+                },
+                {
+                    "type": "Item",
+                    "first": "哎",
+                    "second": "ところで"
+                },
+                {
+                    "type": "Item",
+                    "first": "咦",
+                    "second": "あれえ"
+                },
+                {
+                    "type": "Item",
+                    "first": "奈良",
+                    "second": "なら"
+                },
+                {
+                    "type": "Item",
+                    "first": "富士山",
+                    "second": "ふじさん"
+                },
+                {
+                    "type": "Item",
+                    "first": "もう少し",
+                    "second": "もうすこし"
+                },
+                {
+                    "type": "Item",
+                    "first": "中",
+                    "second": "じゅう"
+                }
+            ]
         }
     ],
-    "tests": []
+    "tests": [
+        {
+            "answers": [
+                "どんな",
+                "ところ",
+                "ひま",
+                "こきょう",
+                "さなかさかな",
+                "きれい",
+                "きたない",
+                "ゆめゆうめ",
+                "ふじさん",
+                "ゆき",
+                "どう",
+                "はれ",
+                "じどうしゃ",
+                "なら",
+                "もうすこし",
+                "しゅうがくりょうこ",
+                "せかい",
+                "しずか",
+                "まち",
+                "そして",
+                "どんな",
+                "へいしつ",
+                "げんき",
+                "にんぎょう",
+                "おみさ",
+                "おかし",
+                "なかじゅう",
+                "あれえ",
+                "かんたん",
+                "あれえ",
+                "ハンサム",
+                "いろいろ",
+                "とおり",
+                "きれい",
+                "すいぜんしーぜん",
+                "もみじ",
+                "ふべんふべん",
+                "すき",
+                "ちょうこく",
+                "くもり",
+                "さっか",
+                "あめ",
+                "もの",
+                "にぎやか",
+                "しんかつ",
+                "ぶちょう",
+                "かんこうきゃく",
+                "でも",
+                "せいかつ",
+                "ひ",
+                "さくへん",
+                "どうぐ",
+                "べんり"
+            ],
+            "submmited": true,
+            "titles": [
+                {
+                    "type": "Item",
+                    "first": "中文如何",
+                    "second": "いかが"
+                },
+                {
+                    "type": "Item",
+                    "first": "所",
+                    "second": "ところ"
+                },
+                {
+                    "type": "Item",
+                    "first": "暇",
+                    "second": "ひま"
+                },
+                {
+                    "type": "Item",
+                    "first": "故郷",
+                    "second": "こきょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "魚",
+                    "second": "さかな"
+                },
+                {
+                    "type": "Item",
+                    "first": "綺麗",
+                    "second": "きれい"
+                },
+                {
+                    "type": "Item",
+                    "first": "汚い",
+                    "second": "きたない"
+                },
+                {
+                    "type": "Item",
+                    "first": "有名",
+                    "second": "ゆうめい"
+                },
+                {
+                    "type": "Item",
+                    "first": "富士山",
+                    "second": "ふじさん"
+                },
+                {
+                    "type": "Item",
+                    "first": "雪",
+                    "second": "ゆき"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文怎样",
+                    "second": "どう"
+                },
+                {
+                    "type": "Item",
+                    "first": "晴れ",
+                    "second": "はれ"
+                },
+                {
+                    "type": "Item",
+                    "first": "自動車",
+                    "second": "じどうしゃ"
+                },
+                {
+                    "type": "Item",
+                    "first": "奈良",
+                    "second": "なら"
+                },
+                {
+                    "type": "Item",
+                    "first": "もう少し",
+                    "second": "もうすこし"
+                },
+                {
+                    "type": "Item",
+                    "first": "修学旅行",
+                    "second": "しゅうがくりょこう"
+                },
+                {
+                    "type": "Item",
+                    "first": "世界",
+                    "second": "せかい"
+                },
+                {
+                    "type": "Item",
+                    "first": "静か",
+                    "second": "しずか"
+                },
+                {
+                    "type": "Item",
+                    "first": "町",
+                    "second": "まち"
+                },
+                {
+                    "type": "Item",
+                    "first": "而且、于是",
+                    "second": "そして"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文什么样的",
+                    "second": "どんな"
+                },
+                {
+                    "type": "Item",
+                    "first": "平日",
+                    "second": "へいじつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "元気",
+                    "second": "げんき"
+                },
+                {
+                    "type": "Item",
+                    "first": "人形",
+                    "second": "にんぎょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "お店",
+                    "second": "おみせ"
+                },
+                {
+                    "type": "Item",
+                    "first": "お菓子",
+                    "second": "おかし"
+                },
+                {
+                    "type": "Item",
+                    "first": "中",
+                    "second": "じゅう"
+                },
+                {
+                    "type": "Item",
+                    "first": "咦",
+                    "second": "あれえ"
+                },
+                {
+                    "type": "Item",
+                    "first": "簡単",
+                    "second": "かんたん"
+                },
+                {
+                    "type": "Item",
+                    "first": "哎",
+                    "second": "ところで"
+                },
+                {
+                    "type": "Item",
+                    "first": "handsome",
+                    "second": "ハンサム"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文各种各样",
+                    "second": "いろいろ"
+                },
+                {
+                    "type": "Item",
+                    "first": "通り",
+                    "second": "とおり"
+                },
+                {
+                    "type": "Item",
+                    "first": "嫌い",
+                    "second": "きらい"
+                },
+                {
+                    "type": "Item",
+                    "first": "season",
+                    "second": "シーズン"
+                },
+                {
+                    "type": "Item",
+                    "first": "紅葉",
+                    "second": "もみじ"
+                },
+                {
+                    "type": "Item",
+                    "first": "不便",
+                    "second": "ふべｎ"
+                },
+                {
+                    "type": "Item",
+                    "first": "好き",
+                    "second": "すき"
+                },
+                {
+                    "type": "Item",
+                    "first": "彫刻",
+                    "second": "ちょうこく"
+                },
+                {
+                    "type": "Item",
+                    "first": "曇り",
+                    "second": "くもり"
+                },
+                {
+                    "type": "Item",
+                    "first": "作家",
+                    "second": "さっか"
+                },
+                {
+                    "type": "Item",
+                    "first": "雨",
+                    "second": "あめ"
+                },
+                {
+                    "type": "Item",
+                    "first": "物",
+                    "second": "もの"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文热闹",
+                    "second": "にぎやか"
+                },
+                {
+                    "type": "Item",
+                    "first": "親切",
+                    "second": "しんせつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "部長",
+                    "second": "ぶちょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "観光客",
+                    "second": "かんこうきゃく"
+                },
+                {
+                    "type": "Item",
+                    "first": "可是不过",
+                    "second": "でも"
+                },
+                {
+                    "type": "Item",
+                    "first": "生活",
+                    "second": "せいかつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "日",
+                    "second": "ひ"
+                },
+                {
+                    "type": "Item",
+                    "first": "作品",
+                    "second": "さくひん"
+                },
+                {
+                    "type": "Item",
+                    "first": "道具",
+                    "second": "どうぐ"
+                },
+                {
+                    "type": "Item",
+                    "first": "便利",
+                    "second": "べんり"
+                }
+            ]
+        },
+        {
+            "answers": [
+                "しずか",
+                "シーズン",
+                "せかい",
+                "ちょうこく",
+                "さっか",
+                "へいじつ",
+                "すき",
+                "あめ",
+                "げんき",
+                "どんな",
+                "いろいろ",
+                "ひ",
+                "さくひん",
+                "ハンサム",
+                "しゅうがくりょこ",
+                "なら",
+                "もうすこし",
+                "でも",
+                "あれえ",
+                "じどうしゃ",
+                "おみせ",
+                "ゆな",
+                "おかし",
+                "にんぎょう",
+                "しんかつ",
+                "もの",
+                "どう",
+                "ふじさん",
+                "ところ",
+                "かんこきゃく",
+                "さかな",
+                "ふべん",
+                "まち",
+                "ぶちょう",
+                "はれ",
+                "べんり",
+                "こきょう",
+                "かんたん",
+                "どうぐ",
+                "ゆき",
+                "きらい",
+                "きれい",
+                "しま",
+                "いころ",
+                "とおり",
+                "きたない",
+                "どう",
+                "もみじ",
+                "もくり",
+                "そして",
+                "しんかつ",
+                "にぎやか",
+                "ゆうめ"
+            ],
+            "submmited": true,
+            "titles": [
+                {
+                    "type": "Item",
+                    "first": "静か",
+                    "second": "しずか"
+                },
+                {
+                    "type": "Item",
+                    "first": "season",
+                    "second": "シーズン"
+                },
+                {
+                    "type": "Item",
+                    "first": "世界",
+                    "second": "せかい"
+                },
+                {
+                    "type": "Item",
+                    "first": "彫刻",
+                    "second": "ちょうこく"
+                },
+                {
+                    "type": "Item",
+                    "first": "作家",
+                    "second": "さっか"
+                },
+                {
+                    "type": "Item",
+                    "first": "平日",
+                    "second": "へいじつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "好き",
+                    "second": "すき"
+                },
+                {
+                    "type": "Item",
+                    "first": "雨",
+                    "second": "あめ"
+                },
+                {
+                    "type": "Item",
+                    "first": "元気",
+                    "second": "げんき"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文什么样的",
+                    "second": "どんな"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文各种各样",
+                    "second": "いろいろ"
+                },
+                {
+                    "type": "Item",
+                    "first": "日",
+                    "second": "ひ"
+                },
+                {
+                    "type": "Item",
+                    "first": "作品",
+                    "second": "さくひん"
+                },
+                {
+                    "type": "Item",
+                    "first": "handsome",
+                    "second": "ハンサム"
+                },
+                {
+                    "type": "Item",
+                    "first": "修学旅行",
+                    "second": "しゅうがくりょこう"
+                },
+                {
+                    "type": "Item",
+                    "first": "奈良",
+                    "second": "なら"
+                },
+                {
+                    "type": "Item",
+                    "first": "もう少し",
+                    "second": "もうすこし"
+                },
+                {
+                    "type": "Item",
+                    "first": "可是不过",
+                    "second": "でも"
+                },
+                {
+                    "type": "Item",
+                    "first": "咦",
+                    "second": "あれえ"
+                },
+                {
+                    "type": "Item",
+                    "first": "自動車",
+                    "second": "じどうしゃ"
+                },
+                {
+                    "type": "Item",
+                    "first": "お店",
+                    "second": "おみせ"
+                },
+                {
+                    "type": "Item",
+                    "first": "中",
+                    "second": "じゅう"
+                },
+                {
+                    "type": "Item",
+                    "first": "お菓子",
+                    "second": "おかし"
+                },
+                {
+                    "type": "Item",
+                    "first": "人形",
+                    "second": "にんぎょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "親切",
+                    "second": "しんせつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "物",
+                    "second": "もの"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文怎样",
+                    "second": "どう"
+                },
+                {
+                    "type": "Item",
+                    "first": "富士山",
+                    "second": "ふじさん"
+                },
+                {
+                    "type": "Item",
+                    "first": "所",
+                    "second": "ところ"
+                },
+                {
+                    "type": "Item",
+                    "first": "観光客",
+                    "second": "かんこうきゃく"
+                },
+                {
+                    "type": "Item",
+                    "first": "魚",
+                    "second": "さかな"
+                },
+                {
+                    "type": "Item",
+                    "first": "不便",
+                    "second": "ふべｎ"
+                },
+                {
+                    "type": "Item",
+                    "first": "町",
+                    "second": "まち"
+                },
+                {
+                    "type": "Item",
+                    "first": "部長",
+                    "second": "ぶちょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "晴れ",
+                    "second": "はれ"
+                },
+                {
+                    "type": "Item",
+                    "first": "便利",
+                    "second": "べんり"
+                },
+                {
+                    "type": "Item",
+                    "first": "故郷",
+                    "second": "こきょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "簡単",
+                    "second": "かんたん"
+                },
+                {
+                    "type": "Item",
+                    "first": "道具",
+                    "second": "どうぐ"
+                },
+                {
+                    "type": "Item",
+                    "first": "雪",
+                    "second": "ゆき"
+                },
+                {
+                    "type": "Item",
+                    "first": "嫌い",
+                    "second": "きらい"
+                },
+                {
+                    "type": "Item",
+                    "first": "綺麗",
+                    "second": "きれい"
+                },
+                {
+                    "type": "Item",
+                    "first": "暇",
+                    "second": "ひま"
+                },
+                {
+                    "type": "Item",
+                    "first": "哎",
+                    "second": "ところで"
+                },
+                {
+                    "type": "Item",
+                    "first": "通り",
+                    "second": "とおり"
+                },
+                {
+                    "type": "Item",
+                    "first": "汚い",
+                    "second": "きたない"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文如何",
+                    "second": "いかが"
+                },
+                {
+                    "type": "Item",
+                    "first": "紅葉",
+                    "second": "もみじ"
+                },
+                {
+                    "type": "Item",
+                    "first": "曇り",
+                    "second": "くもり"
+                },
+                {
+                    "type": "Item",
+                    "first": "而且、于是",
+                    "second": "そして"
+                },
+                {
+                    "type": "Item",
+                    "first": "生活",
+                    "second": "せいかつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文热闹",
+                    "second": "にぎやか"
+                },
+                {
+                    "type": "Item",
+                    "first": "有名",
+                    "second": "ゆうめい"
+                }
+            ]
+        },
+        {
+            "answers": [
+                "ところで",
+                "さくひん",
+                "まち",
+                "じゅう",
+                "ハンサム",
+                "しずか",
+                "シーズン",
+                "ゆうめい",
+                "もの",
+                "せいかつ",
+                "かんたん",
+                "どんな",
+                "べんり",
+                "しゅうがくりょこう",
+                "ふじさん",
+                "ところ",
+                "ふべん",
+                "ゆき",
+                "ひま",
+                "そして",
+                "とおり",
+                "さかな",
+                "へいじつ",
+                "げんき",
+                "おかし",
+                "ひ",
+                "どう",
+                "もみじ",
+                "さかい",
+                "きれい",
+                "ちょうこく",
+                "きたない",
+                "もうすこし",
+                "どうぐ",
+                "しんせつ",
+                "なら",
+                "はれ",
+                "にんぎょう",
+                "あめ",
+                "おみせ",
+                "いかが",
+                "きらい",
+                "ぶちょう",
+                "でも",
+                "いろいろ",
+                "にぎやか",
+                "じどうしゃ",
+                "すき",
+                "さっか",
+                "かんこうきゃく",
+                "くもり",
+                "こきょう",
+                "あれえ"
+            ],
+            "submmited": true,
+            "titles": [
+                {
+                    "type": "Item",
+                    "first": "哎",
+                    "second": "ところで"
+                },
+                {
+                    "type": "Item",
+                    "first": "作品",
+                    "second": "さくひん"
+                },
+                {
+                    "type": "Item",
+                    "first": "町",
+                    "second": "まち"
+                },
+                {
+                    "type": "Item",
+                    "first": "中",
+                    "second": "じゅう"
+                },
+                {
+                    "type": "Item",
+                    "first": "handsome",
+                    "second": "ハンサム"
+                },
+                {
+                    "type": "Item",
+                    "first": "静か",
+                    "second": "しずか"
+                },
+                {
+                    "type": "Item",
+                    "first": "season",
+                    "second": "シーズン"
+                },
+                {
+                    "type": "Item",
+                    "first": "有名",
+                    "second": "ゆうめい"
+                },
+                {
+                    "type": "Item",
+                    "first": "物",
+                    "second": "もの"
+                },
+                {
+                    "type": "Item",
+                    "first": "生活",
+                    "second": "せいかつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "簡単",
+                    "second": "かんたん"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文什么样的",
+                    "second": "どんな"
+                },
+                {
+                    "type": "Item",
+                    "first": "便利",
+                    "second": "べんり"
+                },
+                {
+                    "type": "Item",
+                    "first": "修学旅行",
+                    "second": "しゅうがくりょこう"
+                },
+                {
+                    "type": "Item",
+                    "first": "富士山",
+                    "second": "ふじさん"
+                },
+                {
+                    "type": "Item",
+                    "first": "所",
+                    "second": "ところ"
+                },
+                {
+                    "type": "Item",
+                    "first": "不便",
+                    "second": "ふべん"
+                },
+                {
+                    "type": "Item",
+                    "first": "雪",
+                    "second": "ゆき"
+                },
+                {
+                    "type": "Item",
+                    "first": "暇",
+                    "second": "ひま"
+                },
+                {
+                    "type": "Item",
+                    "first": "而且、于是",
+                    "second": "そして"
+                },
+                {
+                    "type": "Item",
+                    "first": "通り",
+                    "second": "とおり"
+                },
+                {
+                    "type": "Item",
+                    "first": "魚",
+                    "second": "さかな"
+                },
+                {
+                    "type": "Item",
+                    "first": "平日",
+                    "second": "へいじつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "元気",
+                    "second": "げんき"
+                },
+                {
+                    "type": "Item",
+                    "first": "お菓子",
+                    "second": "おかし"
+                },
+                {
+                    "type": "Item",
+                    "first": "日",
+                    "second": "ひ"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文怎样",
+                    "second": "どう"
+                },
+                {
+                    "type": "Item",
+                    "first": "紅葉",
+                    "second": "もみじ"
+                },
+                {
+                    "type": "Item",
+                    "first": "世界",
+                    "second": "せかい"
+                },
+                {
+                    "type": "Item",
+                    "first": "綺麗",
+                    "second": "きれい"
+                },
+                {
+                    "type": "Item",
+                    "first": "彫刻",
+                    "second": "ちょうこく"
+                },
+                {
+                    "type": "Item",
+                    "first": "汚い",
+                    "second": "きたない"
+                },
+                {
+                    "type": "Item",
+                    "first": "もう少し",
+                    "second": "もうすこし"
+                },
+                {
+                    "type": "Item",
+                    "first": "道具",
+                    "second": "どうぐ"
+                },
+                {
+                    "type": "Item",
+                    "first": "親切",
+                    "second": "しんせつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "奈良",
+                    "second": "なら"
+                },
+                {
+                    "type": "Item",
+                    "first": "晴れ",
+                    "second": "はれ"
+                },
+                {
+                    "type": "Item",
+                    "first": "人形",
+                    "second": "にんぎょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "雨",
+                    "second": "あめ"
+                },
+                {
+                    "type": "Item",
+                    "first": "お店",
+                    "second": "おみせ"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文如何",
+                    "second": "いかが"
+                },
+                {
+                    "type": "Item",
+                    "first": "嫌い",
+                    "second": "きらい"
+                },
+                {
+                    "type": "Item",
+                    "first": "部長",
+                    "second": "ぶちょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "可是不过",
+                    "second": "でも"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文各种各样",
+                    "second": "いろいろ"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文热闹",
+                    "second": "にぎやか"
+                },
+                {
+                    "type": "Item",
+                    "first": "自動車",
+                    "second": "じどうしゃ"
+                },
+                {
+                    "type": "Item",
+                    "first": "好き",
+                    "second": "すき"
+                },
+                {
+                    "type": "Item",
+                    "first": "作家",
+                    "second": "さっか"
+                },
+                {
+                    "type": "Item",
+                    "first": "観光客",
+                    "second": "かんこうきゃく"
+                },
+                {
+                    "type": "Item",
+                    "first": "曇り",
+                    "second": "くもり"
+                },
+                {
+                    "type": "Item",
+                    "first": "故郷",
+                    "second": "こきょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "咦",
+                    "second": "あれえ"
+                }
+            ]
+        },
+        {
+            "answers": [
+                "おかし",
+                "どうぐ",
+                "そして",
+                "とおり",
+                "げんき",
+                "どう",
+                "きれい",
+                "おみせ",
+                "もみじ",
+                "しんせつ",
+                "いろいろ",
+                "さかな",
+                "ゆき",
+                "ところで",
+                "せいかつ",
+                "もうすこし",
+                "あれえ",
+                "ちょうこく",
+                "にんぎょう",
+                "じゅう",
+                "ぶちょう",
+                "きたない",
+                "しゅうがくりょこう",
+                "どんな",
+                "シーズン",
+                "かんたん",
+                "あめ",
+                "かんこうきゃく",
+                "でも",
+                "さっか",
+                "ゆうめい",
+                "へいじつ",
+                "せかい",
+                "じどうしゃ",
+                "きらい",
+                "しずか",
+                "こきょう",
+                "ひ",
+                "ところ",
+                "もの",
+                "すき",
+                "ふべん",
+                "さくひん",
+                "ひま",
+                "なら",
+                "くもり",
+                "にぎやか",
+                "いかが",
+                "ふじさん",
+                "べんり",
+                "まち",
+                "ハンサム",
+                "はれ"
+            ],
+            "submmited": true,
+            "titles": [
+                {
+                    "type": "Item",
+                    "first": "お菓子",
+                    "second": "おかし"
+                },
+                {
+                    "type": "Item",
+                    "first": "道具",
+                    "second": "どうぐ"
+                },
+                {
+                    "type": "Item",
+                    "first": "而且、于是",
+                    "second": "そして"
+                },
+                {
+                    "type": "Item",
+                    "first": "通り",
+                    "second": "とおり"
+                },
+                {
+                    "type": "Item",
+                    "first": "元気",
+                    "second": "げんき"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文怎样",
+                    "second": "どう"
+                },
+                {
+                    "type": "Item",
+                    "first": "綺麗",
+                    "second": "きれい"
+                },
+                {
+                    "type": "Item",
+                    "first": "お店",
+                    "second": "おみせ"
+                },
+                {
+                    "type": "Item",
+                    "first": "紅葉",
+                    "second": "もみじ"
+                },
+                {
+                    "type": "Item",
+                    "first": "親切",
+                    "second": "しんせつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文各种各样",
+                    "second": "いろいろ"
+                },
+                {
+                    "type": "Item",
+                    "first": "魚",
+                    "second": "さかな"
+                },
+                {
+                    "type": "Item",
+                    "first": "雪",
+                    "second": "ゆき"
+                },
+                {
+                    "type": "Item",
+                    "first": "哎",
+                    "second": "ところで"
+                },
+                {
+                    "type": "Item",
+                    "first": "生活",
+                    "second": "せいかつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "もう少し",
+                    "second": "もうすこし"
+                },
+                {
+                    "type": "Item",
+                    "first": "咦",
+                    "second": "あれえ"
+                },
+                {
+                    "type": "Item",
+                    "first": "彫刻",
+                    "second": "ちょうこく"
+                },
+                {
+                    "type": "Item",
+                    "first": "人形",
+                    "second": "にんぎょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "中",
+                    "second": "じゅう"
+                },
+                {
+                    "type": "Item",
+                    "first": "部長",
+                    "second": "ぶちょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "汚い",
+                    "second": "きたない"
+                },
+                {
+                    "type": "Item",
+                    "first": "修学旅行",
+                    "second": "しゅうがくりょこう"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文什么样的",
+                    "second": "どんな"
+                },
+                {
+                    "type": "Item",
+                    "first": "season",
+                    "second": "シーズン"
+                },
+                {
+                    "type": "Item",
+                    "first": "簡単",
+                    "second": "かんたん"
+                },
+                {
+                    "type": "Item",
+                    "first": "雨",
+                    "second": "あめ"
+                },
+                {
+                    "type": "Item",
+                    "first": "観光客",
+                    "second": "かんこうきゃく"
+                },
+                {
+                    "type": "Item",
+                    "first": "可是不过",
+                    "second": "でも"
+                },
+                {
+                    "type": "Item",
+                    "first": "作家",
+                    "second": "さっか"
+                },
+                {
+                    "type": "Item",
+                    "first": "有名",
+                    "second": "ゆうめい"
+                },
+                {
+                    "type": "Item",
+                    "first": "平日",
+                    "second": "へいじつ"
+                },
+                {
+                    "type": "Item",
+                    "first": "世界",
+                    "second": "せかい"
+                },
+                {
+                    "type": "Item",
+                    "first": "自動車",
+                    "second": "じどうしゃ"
+                },
+                {
+                    "type": "Item",
+                    "first": "嫌い",
+                    "second": "きらい"
+                },
+                {
+                    "type": "Item",
+                    "first": "静か",
+                    "second": "しずか"
+                },
+                {
+                    "type": "Item",
+                    "first": "故郷",
+                    "second": "こきょう"
+                },
+                {
+                    "type": "Item",
+                    "first": "日",
+                    "second": "ひ"
+                },
+                {
+                    "type": "Item",
+                    "first": "所",
+                    "second": "ところ"
+                },
+                {
+                    "type": "Item",
+                    "first": "物",
+                    "second": "もの"
+                },
+                {
+                    "type": "Item",
+                    "first": "好き",
+                    "second": "すき"
+                },
+                {
+                    "type": "Item",
+                    "first": "不便",
+                    "second": "ふべん"
+                },
+                {
+                    "type": "Item",
+                    "first": "作品",
+                    "second": "さくひん"
+                },
+                {
+                    "type": "Item",
+                    "first": "暇",
+                    "second": "ひま"
+                },
+                {
+                    "type": "Item",
+                    "first": "奈良",
+                    "second": "なら"
+                },
+                {
+                    "type": "Item",
+                    "first": "曇り",
+                    "second": "くもり"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文热闹",
+                    "second": "にぎやか"
+                },
+                {
+                    "type": "Item",
+                    "first": "中文如何",
+                    "second": "いかが"
+                },
+                {
+                    "type": "Item",
+                    "first": "富士山",
+                    "second": "ふじさん"
+                },
+                {
+                    "type": "Item",
+                    "first": "便利",
+                    "second": "べんり"
+                },
+                {
+                    "type": "Item",
+                    "first": "町",
+                    "second": "まち"
+                },
+                {
+                    "type": "Item",
+                    "first": "handsome",
+                    "second": "ハンサム"
+                },
+                {
+                    "type": "Item",
+                    "first": "晴れ",
+                    "second": "はれ"
+                }
+            ]
+        }
+    ]
 }

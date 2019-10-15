@@ -3,6 +3,7 @@
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QPushButton>
+#include <QKeyEvent>
 
 TestDialog::TestDialog(QVector<Item> resource, QWidget* parent):QDialog(parent)
 {
@@ -45,4 +46,14 @@ void TestDialog::store(){
 
 void TestDialog::setAnswer(QStringVec answers){
     testWidget->setAnswers(answers);
+}
+
+void TestDialog::keyPressEvent(QKeyEvent* event) {
+    auto key = event->key();
+    if(key == Qt::Key_Escape){
+
+    }
+    else{
+        QDialog::keyPressEvent(event);
+    }
 }

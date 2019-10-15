@@ -41,3 +41,15 @@ void TestData::serialize(rapidjson::PrettyWriter<rapidjson::StringBuffer>& write
     writer.EndArray();
     writer.EndObject();
 }
+
+QVector<Item> TestData::wrongItems(){
+    QVector<Item> items;
+    for(int i = 0; i < titles.size(); i++){
+        auto str = titles.at(i).second;
+        auto ans = answers.at(i);
+        if(str != ans){
+            items.append(titles.at(i));
+        }
+    }
+    return items;
+}

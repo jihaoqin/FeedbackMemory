@@ -144,6 +144,24 @@ void MainWindow::beginTest(){
         if(testDialog->submited == true){
             testD->submmited = true;
             dataPtr->tests.append(testD);
+            //获得testD的错误数据
+            auto wrong = testD->wrongItems();
+            QVector<Item> toBeAdd;
+            for(int i = 0; i < wrong.size(); i++){
+                auto title = wrong.at(i).first;
+                auto items = dataPtr->notes->at(0)->items;
+                bool findSame = false;
+                for(int j = 0; j < items.size(); j++){
+                    if(items.at(j).first == title){
+                        findSame = true;
+                    }
+                }
+                if(!findSame){
+                    dataPtr->notes->at(0)->items.append(wrong.at(i));
+                    //toBeAdd.append(wrong.at(i));
+                }
+            }
+            //tableWidget->addItems(toBeAdd);
         }
         else{
             testD->submmited = false;

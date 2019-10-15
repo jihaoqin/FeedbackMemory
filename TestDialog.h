@@ -17,6 +17,8 @@ public:
     TestPtr data();
     void setAnswer(QStringVec);
     bool submited;
+protected:
+    void keyPressEvent(QKeyEvent* event) override;
 public slots:
     void submit();
     void store();
